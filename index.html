@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Heroes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Galería de Superhéroes</h1>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar héroes...">
+            <button id="searchButton">Buscar</button>
+        </div>
+    </header>
+    
+    <div class="heroes-container" id="heroesContainer"></div>
+    
+    <div class="no-results" id="noResults">
+        <h2>No se encontraron héroes</h2>
+        <p>Intenta con otra búsqueda</p>
+    </div>
+
+    <div class="hero-details" id="heroDetails">
+        <img class="hero-image" id="detailImage" src="" alt="Héroe">
+        <h2 id="detailName">Nombre del Héroe</h2>
+        <p class="hero-description" id="detailDescription">Descripción detallada del héroe.</p>
+        <button class="back-button" id="backButton">Volver a la galería</button>
+    </div>
+
+    <template id="hero-card-template">
+        <hero-card></hero-card>
+    </template>
+</body>
+</html>
